@@ -1,0 +1,21 @@
+{
+    "posts": [
+        {
+            "id":1,
+            "title" : "Create Post",
+            "description" : "post created successfully"
+        },
+
+        {
+            "id":2,
+            "title" : "Edit Post",
+            "description" : "post edited successfully"
+        },
+
+        {
+            "id":3,
+            "title" : "Create and Edit Post",
+            "description" : "post created and edited successfully"
+        }
+    ]
+}

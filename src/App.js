@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import CreatePost from "./components/CreatePost";
+import PageHeading from "./components/PageHeading";
+import PostsDisplay from "./components/PostsDisplay";
+
+import Container from "./../node_modules/react-bootstrap/esm/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <PageHeading />
+      <Row className="justify-content-md-center">
+        <Col lg="6">
+          <CreatePost />
+          <PostsDisplay />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
